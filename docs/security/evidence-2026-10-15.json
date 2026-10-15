@@ -158,5 +158,52 @@
       "privileged_trigger": false,
       "yaml_valid": true
     }
-  ]
+  ],
+  "remaining_advisories": [
+    {
+      "name": "braces",
+      "severity": "high",
+      "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+      "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+      "range": "<=3.0.3"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "moderate",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "range": "<3.15.0"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+      "url": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "range": ">=3.0.0 <3.15.0"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) \u2014 CVE-2026-59870 fix not backported",
+      "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "range": ">=4.0.0 <4.3.1"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "range": ">=4.0.0 <4.3.2"
+    },
+    {
+      "name": "sprintf-js",
+      "severity": "moderate",
+      "title": "sprintf-js vulnerable to denial of service through unbounded precision specifiers",
+      "url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "range": "<=1.1.3"
+    }
+  ],
+  "validation": {
+    "evidence": "See report and CI; no full upstream product-suite claim"
+  }
 }

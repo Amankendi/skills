@@ -1,2 +1,14 @@
 node_modules
 .claude
+
+# ALKENDI security baseline: local secrets and recovery bundles
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.bundle
+__pycache__/

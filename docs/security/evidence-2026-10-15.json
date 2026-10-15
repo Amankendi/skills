@@ -1,0 +1,209 @@
+{
+  "repository": "Amankendi/skills",
+  "source_base": "49dd158d1076134a641b33efb035946536778336",
+  "settings_observed_at": "2026-10-15T13:52:25.670122+00:00",
+  "settings": {
+    "deploy_keys": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "branch": {
+      "status": "PASS",
+      "data": {
+        "name": "main",
+        "sha": "49dd158d1076134a641b33efb035946536778336",
+        "protected": false,
+        "protection": {
+          "enabled": false,
+          "required_status_checks": {
+            "enforcement_level": "off",
+            "contexts": [],
+            "checks": []
+          }
+        }
+      }
+    },
+    "branch_protection": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "rulesets": {
+      "status": "PASS",
+      "data": []
+    },
+    "actions_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "workflow_permissions": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "fork_approval": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "dependabot_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "secret_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    },
+    "code_scanning_alerts": {
+      "status": "BLOCKED",
+      "http": 403,
+      "reason": "GitHub API request unavailable with current integration"
+    }
+  },
+  "collaborator_role_counts": {
+    "admin": 1
+  },
+  "original_secret_scan": {
+    "repository": "Amankendi/skills",
+    "scanner": "gitleaks 8.30.1",
+    "binary_sha256": "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb",
+    "scope": "all locally mirrored Git refs, including fetched PR refs",
+    "exit_code": 0,
+    "status": "PASS",
+    "findings": []
+  },
+  "proposed_secret_gate": {
+    "check": "gitleaks-history",
+    "version": "8.30.1",
+    "exit_code": 0,
+    "status": "PASS",
+    "candidate_count": 0,
+    "candidates": []
+  },
+  "local_sast": {
+    "check": "semgrep-local-rules",
+    "exit_code": 0,
+    "status": "PASS",
+    "candidate_count": 0,
+    "candidates": [],
+    "error_count": 0
+  },
+  "dependency_counts_before": {
+    "info": 0,
+    "low": 0,
+    "moderate": 2,
+    "high": 16,
+    "critical": 0,
+    "total": 18
+  },
+  "dependency_counts_after": {
+    "info": 0,
+    "low": 0,
+    "moderate": 2,
+    "high": 16,
+    "critical": 0,
+    "total": 18
+  },
+  "osv_affected_package_entries": 0,
+  "osv_unique_advisory_ids": [],
+  "recovery": {
+    "repository": "Amankendi/skills",
+    "status": "PASS",
+    "scope": "local code bundle restoration only; no offsite/data/LFS/host-state claim",
+    "steps_exit_codes": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "sha256": "05479c2984af67acc284e0c2b746b43c4d14859a851e1b3b2c1cafbba3b69c38",
+    "bytes": 1946547
+  },
+  "workflow_source": [
+    {
+      "workflow": "alkendi-security.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "needs-info.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [
+        "actions/stale@v10"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "triage-label.yml",
+      "explicit_workflow_permissions": true,
+      "unpinned_actions": [],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    },
+    {
+      "workflow": "release.yml",
+      "explicit_workflow_permissions": false,
+      "unpinned_actions": [
+        "actions/checkout@v4",
+        "actions/setup-node@v4",
+        "changesets/action@v1"
+      ],
+      "privileged_trigger": false,
+      "yaml_valid": true
+    }
+  ],
+  "remaining_advisories": [
+    {
+      "name": "braces",
+      "severity": "high",
+      "title": "braces vulnerable to stack-exhaustion denial of service through deeply nested patterns",
+      "url": "https://github.com/advisories/GHSA-vfj7-8cjw-p6xm",
+      "range": "<=3.0.3"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "moderate",
+      "title": "JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases",
+      "url": "https://github.com/advisories/GHSA-h67p-54hq-rp68",
+      "range": "<3.15.0"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: YAML merge-key chains can force quadratic CPU consumption",
+      "url": "https://github.com/advisories/GHSA-52cp-r559-cp3m",
+      "range": ">=3.0.0 <3.15.0"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) \u2014 CVE-2026-59870 fix not backported",
+      "url": "https://github.com/advisories/GHSA-5p4m-2wfm-xmqj",
+      "range": ">=4.0.0 <4.3.1"
+    },
+    {
+      "name": "js-yaml",
+      "severity": "high",
+      "title": "js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources",
+      "url": "https://github.com/advisories/GHSA-2883-xcg3-v3hh",
+      "range": ">=4.0.0 <4.3.2"
+    },
+    {
+      "name": "sprintf-js",
+      "severity": "moderate",
+      "title": "sprintf-js vulnerable to denial of service through unbounded precision specifiers",
+      "url": "https://github.com/advisories/GHSA-hp3w-g68c-fv3c",
+      "range": "<=1.1.3"
+    }
+  ],
+  "validation": {
+    "evidence": "See report and CI; no full upstream product-suite claim"
+  }
+}
